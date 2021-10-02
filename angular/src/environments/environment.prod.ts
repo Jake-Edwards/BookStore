@@ -6,20 +6,21 @@ export const environment = {
   production: true,
   application: {
     baseUrl,
-    name: 'BookStore',
+    name: 'PhoneBookDemo',
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: 'https://localhost:44359',
+    issuer: 'https://localhost:44378',
     redirectUri: baseUrl,
-    clientId: 'BookStore_App',
+    clientId: 'PhoneBookDemo_App',
     responseType: 'code',
-    scope: 'offline_access BookStore',
+    scope: 'offline_access PhoneBookDemo',
+    requireHttps: true
   },
   apis: {
     default: {
-      url: 'https://localhost:44359',
-      rootNamespace: 'Acme.BookStore',
+      url: 'https://localhost:44348',
+      rootNamespace: 'PhoneBookDemo',
     },
   },
 } as Environment;
